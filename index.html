@@ -226,12 +226,13 @@
       border-bottom: 1px solid var(--line);
     }
     .hero-avatar {
-      width: 48px; height: 48px; border-radius: 50%;
-      background: var(--accent);
-      display: flex; align-items: center; justify-content: center;
-      font-family: 'Cormorant', Georgia, serif;
-      font-size: 20px; font-weight: 700; color: #0B0C0A;
-      flex-shrink: 0;
+      width: 52px; height: 52px; border-radius: 50%;
+      background: var(--surface-2);
+      overflow: hidden; flex-shrink: 0;
+      border: 2px solid rgba(79,216,122,0.3);
+    }
+    .hero-avatar img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
     }
     .hero-card-name { font-size: 17px; font-weight: 600; margin: 0 0 3px; color: var(--text); }
     .hero-card-title { font-size: 13px; color: var(--text-2); margin: 0 0 10px; line-height: 1.4; }
@@ -614,7 +615,9 @@
 
       <div class="hero-card reveal" style="transition-delay: 0.12s;">
         <div class="hero-card-header">
-          <div class="hero-avatar" aria-hidden="true">J</div>
+          <div class="hero-avatar">
+            <img src="https://joemanbeck.com/img/headshot.jpg" alt="Joe Manbeck" width="52" height="52">
+          </div>
           <div>
             <p class="hero-card-name">Joe Manbeck</p>
             <p class="hero-card-title">Director of Product · Creative Tech & E-Commerce</p>
@@ -740,7 +743,7 @@
 
         <div class="project-card reveal">
           <div class="project-img-container">
-            <img src="https://placehold.co/900x400/1A1E16/4FD87A?text=Custom+Sales+Product"
+            <img src="https://joemanbeck.com/img/project-fontspring.png"
                  alt="Custom sales product dashboard" width="900" height="400" loading="lazy">
             <div class="project-img-overlay" aria-hidden="true"></div>
           </div>
@@ -757,7 +760,7 @@
 
         <div class="project-card reveal" style="transition-delay: 0.12s;">
           <div class="project-img-container">
-            <img src="https://placehold.co/900x400/1A1E16/4FD87A?text=Home+Repair+Projects"
+            <img src="https://joemanbeck.com/img/project-homerepair.jpg"
                  alt="Home repair project delivery" width="900" height="400" loading="lazy">
             <div class="project-img-overlay" aria-hidden="true"></div>
           </div>
